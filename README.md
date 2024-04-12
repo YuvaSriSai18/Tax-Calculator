@@ -34,3 +34,5 @@ This is a simple web-based tax calculator that allows users to calculate their o
 - CSS
 - JavaScript
 
+# For Live Preview
+Go to https://yuvasrisai18.github.io/Tax-Calculator/
