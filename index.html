@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="web icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClu7R2DKXTI6SdW2e1Gucjx-QYlkYT0bUVNenkg00uw&s">
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Style Sheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Tax Calculator</title>
+</head>
+<body>
+    <div class="form">
+        <h2>Tax Calculator</h2>
+        <label for="gross-income">Enter gross annual income <span class="material-symbols-rounded help-icon" id="help-1">help</span> <span id="help-text-1">Gross annual income is your total salary in a year before any deductions</span></label>
+        <div class="ip-1">
+            <input type="text" name="gross-income" placeholder="Enter gross annual income" id="grossAmt" required>
+            <div>
+                <span class="material-symbols-rounded" id="error-1">error</span>
+                <span id="error-1-text">Please enter numbers only.</span>
+            </div>
+        </div>
+
+        <label for="extra-income">Enter extra income <span class="material-symbols-rounded help-icon" id="help-2">help</span><span id="help-text-2">Extra income is your total earnings in a year from other sources before any deductions</span></label>
+        <div class="ip-2">
+            <input type="text" name="extra-income" placeholder="Enter extra income from other sources" id="extraIncome"  required>
+            <div>
+                <span class="material-symbols-rounded" id="error-2">error</span>
+                <span id="error-2-text">Please enter numbers only.</span>
+            </div>
+        </div>
+
+        <label for="age">Enter age group <span class="material-symbols-rounded help-icon" id="help-3">help</span><span id="help-text-3">Specify the age from the given range</span></label>
+
+        <div class="ip-3">
+            <select id="age" name="age"  required>
+                <option value="Select Age Group">Select Age Group</option>
+                <option value="<40">&lt; 40</option>
+                <option value=">40&<60">&ge; 40  & &lt; 60</option>
+                <option value=">60">&ge; 60</option>
+            </select>
+            <div>
+                <span class="material-symbols-rounded" id="error-3">error</span>
+                <span id="error-3-text">Please select one option.</span>
+            </div>
+        </div>
+
+        <label for="deductions">Enter total applicable deductions <span class="material-symbols-rounded help-icon" id="help-4">help</span><span id="help-text-4">Total deductions are the amount that is being deducted </span></label>
+        <div class="ip-4">
+            <input type="text" name="deductions" placeholder="Add total applicable deductions" id="deductAmt" required>
+            <div>
+                <span class="material-symbols-rounded" id="error-4">error</span>
+                <span id="error-4-text">Please enter numbers only.</span>
+            </div>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </div>
+    <section id="section">
+        <h3>Your Overall income will be <br> <span id="result"></span> <br> after tax deductions</h3>
+
+        <button id="close">Close</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
