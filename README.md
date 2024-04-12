@@ -34,7 +34,3 @@ This is a simple web-based tax calculator that allows users to calculate their o
 - CSS
 - JavaScript
 
-## Author
-
-This tax calculator was created by [Yuva Sri Sai] (https://github.com/YuvaSriSai18).
-
